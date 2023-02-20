@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Java Script</h1>
+    <label for="ipais">Em qual país você vive?</label>
+    <input type="text" name="pais" id="ipais">
+
+    <input type="submit" value="Enviar" onclick="nacionalidade()">,
+
+    <div id="res">
+
+    </div>
+
+    <script>
+      var pais = window.document.getElementById('ipais')
+      
+      function nacionalidade(){
+        if(pais == 'Brasil'){
+            res.innerHTML += 'Você vive no Brasil'
+        } else {
+            res.innerHTML += 'Você vive em um país estrangeiro'
+        }
+      }
+    </script>
+</body>
+</html>
